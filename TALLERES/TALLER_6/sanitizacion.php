@@ -8,6 +8,10 @@ function sanitizarEmail($email) {
     return filter_var(trim($email), FILTER_SANITIZE_EMAIL);
 }
 
+function sanitizarNacimiento($nacimiento) {
+    return filter_var($nacimiento, FILTER_SANITIZE_NUMBER_INT);
+}
+
 function sanitizarEdad($edad) {
     return filter_var($edad, FILTER_SANITIZE_NUMBER_INT);
 }
